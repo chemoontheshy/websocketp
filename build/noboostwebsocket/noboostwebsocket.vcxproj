@@ -87,7 +87,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASIO_STANDALONE;_WEBSOCKETPP_CPP11_INTERNAL_;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\3rdparty\include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -141,11 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\noboostwebsocketp\main.cpp" />
-    <ClCompile Include="..\..\src\noboostwebsocketp\websocket_server.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="websocket_server.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\noboostwebsocketp\websocket_server.h" />
+    <ClInclude Include="websocket_server.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
