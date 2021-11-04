@@ -103,7 +103,6 @@ vsnc::vnet::Pubisher::~Pubisher()
 
 bool vsnc::vnet::Pubisher::Pubish(const Data& data)
 {
-	std::string str = "test";
 	for (auto& hdl : __list_handler) {
 		__server.send(hdl,data.ptr,data.len, websocketpp::frame::opcode::BINARY);
 	}
