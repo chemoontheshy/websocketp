@@ -11,7 +11,7 @@ int main()
 	while (1)
 	{
 		server.Pubish(data);
-		Sleep(40);
+		Sleep(1000);
 	}
 	return 0;
 }
