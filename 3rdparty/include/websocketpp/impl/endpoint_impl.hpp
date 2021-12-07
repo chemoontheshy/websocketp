@@ -193,6 +193,7 @@ void endpoint<connection,config>::send(connection_hdl hdl, void const * payload,
     lib::error_code ec;
     send(hdl,payload,len,op,ec);
     if (ec) { throw exception(ec); }
+
 }
 
 template <typename connection, typename config>

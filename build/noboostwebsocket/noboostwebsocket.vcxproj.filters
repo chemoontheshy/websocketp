@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="websocket_server.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\src\noboostwebsocketp\main.cpp" />
+    <ClCompile Include="..\..\src\noboostwebsocketp\websocket_server.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="websocket_server.h" />
+    <ClInclude Include="..\..\src\noboostwebsocketp\websocket_server.h" />
   </ItemGroup>
 </Project>
